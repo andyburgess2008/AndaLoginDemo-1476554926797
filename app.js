@@ -108,6 +108,10 @@ app.get('/home', function(req, res){
 	res.render('mytable', {});
 	
 });
+app.get('/question', function(req, res){
+	res.render('suryqs', {});
+	
+});
 //start server on the specified port and binding hostnew
 app.listen(appEnv.port, host, function() {
   // print a message when the server starts listening
