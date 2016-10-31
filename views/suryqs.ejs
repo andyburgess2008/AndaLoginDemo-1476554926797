@@ -43,6 +43,7 @@
             var url = "https://timesheetservices.mybluemix.net/getSecurityQuestions";
          
             $http.get(url).success( function(response) {
+            	console.log(response.rows);
                $scope.students = response.rows;
             });
          }
