@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // serve the files out of ./public as our main files
 app.use(express.static(__dirname + '/public'));
-appem.use(express.static(path.join(__dirname, '/routes')));
+app.use(express.static(path.join(__dirname, '/routes')));
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
 
